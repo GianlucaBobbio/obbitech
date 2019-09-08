@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Raleway';
+    src: URL('/raleway.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Alpaca';
+    src: URL('./alpaca.ttf') format('truetype');
+}
+.contact-container{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid #000;
+}
+.obbi{
+    font-family: 'Alpaca';
+    font-size: 15rem;
+    letter-spacing: -0.8rem;
+    color: #546e7a;
+    margin-right: 1rem;
+}
+.technologies{
+    font-family: 'Raleway';
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+    margin-top: -95px;
+}
+.phrase{
+    font-size: 2rem;
+    /* display: inline; */
+}
+
+body{
+    background:linear-gradient(135deg, #0FF0B3 0%,#036ED9 100%);
+}
+
+.layout-card {
+    box-shadow: 0px 0px 50px -15px;
+    border-radius: 10px;
+    margin-top: 15vh;
+    height: 70vh;
+    position:relative;
+    background: #FFF;
+}
+
+.layout-card:before {
+    content: "...";
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    transform: rotate(225deg);
+    font-size: 2rem;
+}
+
+.layout-card:after {
+    content: "...";
+    position: absolute;
+    right: 10px;
+    top: 0;
+    transform: rotate(45deg);
+    font-size: 2rem;
+}
+
+.typed-cursor{
+    margin-right: -10px;
+}
+
+.bottom-text{
+    position:absolute;
+    bottom: 20px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    letter-spacing: 0.1rem;
+}

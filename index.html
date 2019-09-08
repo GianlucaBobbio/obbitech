@@ -1,0 +1,86 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <script type="text/javascript">
+      window.addEventListener('load', function() {
+        var options2 = {
+          strings: ["", "DESIGN^800", "CREATE"],
+          typeSpeed: 40,
+          smartBackspace: false,
+          onStringTyped: function(pos, self) {
+            console.log(pos, self);
+            if(pos === 2) {
+              setTimeout(()=>{
+                // self.el.nextSibling.css( "opacity", "0" );
+              }, 200);
+            }
+            // return self.siblings('.typed-cursor').css( "opacity", "0" );
+          }
+        }
+        var options1 = {
+          strings: ['', 'WE DESIGN ', 'WE DEVELOP ', 'WE DELIVER SOLUTIONS'],
+          typeSpeed: 50,
+          backSpeed: 70,
+          backDelay: 300,
+          startDelay: 1000,
+          smartBackspace: true,
+        }
+        var typed = new Typed(".phrase-content", options1);
+        
+        // setTimeout(()=>{
+        //   new Typed(".typing-word", options2);
+        // }, 2000)
+      })
+  </script>
+</head>
+
+<body>
+  <!-- <div class="contact-container p-4">
+    <span class="email">info@obbitech.com</span>
+  </div> -->
+  <div class="layout-card container pt-5">
+    <div class="brand text-center mt-4 mb-5">
+      <h1 class="obbi">obbi</h1>
+      <h2 class="technologies">TECHNOLOGIES</h2>
+    </div>
+    <div class="text-center phrase">
+      <span class="phrase-content"></span>
+    </div>
+    <div class="bottom-text">
+      info@obbitech.com
+    </div>
+  </div>
+  <!-- <div class="bg-secondary pt-3">
+  <h2 class="ml-4 text-white">Our projects</h2>
+  <div class="cards-container px-4 mt-3">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://via.placeholder.com/100" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://via.placeholder.com/100" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div> -->
+<!-- </div>
+  <div class="contact-square">
+    <span class="email">info@obbitech.com</span>
+  </div>
+-->
+</body> 
+
+</html>
